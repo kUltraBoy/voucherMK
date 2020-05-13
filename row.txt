@@ -1,0 +1,35 @@
+﻿<div id="main-wrap"> 
+ 
+ <header class="w3-container w3-red"> 
+   <h4>SYS2U HotSpot, Line : @sys2u</h4> 
+ </header> 
+ 
+ 
+ <div id="leftside" class="w3-container w3-white"> 
+   Profile : <b>%u_actualProfileName%</b> 
+   Username : <b>%u_username%</b> 
+   Password : <b>%u_password%</b> 
+   <br><br><br> 
+ </div> 
+ 
+    <div id="rightside" class="w3-container w3-white"> 
+        <div class="qrcode" id="%u_username%"></div> 
+        <script> jQuery(function(){jQuery('#%u_username%').qrcode( 
+     { 
+      "render": 'div', 
+   "size": 130, 
+         "minVersion": 5, 
+      "maxVersion": 5, 
+         "ecLevel": 'L', 
+      "mode": 0, 
+         "text": "http://10.5.50.1/login?username=%u_username%&password=%u_password%", 
+      "quiet": 0, 
+  } 
+); }) </script> 
+ </div> 
+ 
+ <footer class="w3-container w3-red"> 
+   <h5>ข้อมูลเพิ่มเติม 086-378-2262</h5> 
+ </footer> 
+ 
+</div>
